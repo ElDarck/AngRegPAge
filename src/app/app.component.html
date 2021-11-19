@@ -64,7 +64,7 @@
         <div class="form-group text-check">
           <div>
             <input id="rules" type="checkbox" formControlName="rules"
-                   [ngClass]="{ 'is-invalid': f.rules.touched  && f.rules.errors }">
+                   [ngClass]="{ 'is-invalid': f.rules.touched  && f.rules.errors }" required="true">
             <label for="rules">Я ознакомлен с <a href="#">Условиями, положениями и рисками</a></label>
             <div *ngIf="f.rules.errors" class="invalid-feedback">
               <div *ngIf="f.rules.errors.required">Необходимо отметить</div>
@@ -72,7 +72,7 @@
           </div>
           <div>
             <input id="privacy" type="checkbox" formControlName="privacy"
-                   [ngClass]="{ 'is-invalid': f.privacy.touched && f.privacy.errors }">
+                   [ngClass]="{ 'is-invalid': f.privacy.touched && f.privacy.errors }" required="true">
             <label for="privacy">Я ознакомлен с <a href="#">Политикой конфиденциальности</a></label>
             <div *ngIf="f.privacy.errors" class="invalid-feedback">
               <div *ngIf="f.privacy.errors.required">Необходимо отметить</div>

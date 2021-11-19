@@ -9,12 +9,11 @@
   display: flex;
   max-height: 69px;
   max-width: 1440px;
-  width: 1138px;
   margin: 0 auto;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .header-title {
   font-family: Inter, sans-serif;
@@ -42,6 +41,9 @@ ul li {
   display: inline;
   text-decoration: none;
   margin: 0 32px;
+}
+ul li:last-child {
+  margin: 0 0 0 32px;
 }
 li a {
   text-decoration: none;
@@ -193,7 +195,7 @@ label a {
 
 .submit-button button,
 .submit-button[disabled] {
-  background: linear-gradient(180deg, #ce9393 0%, rgba(232, 239, 235, 0.61) 100%);
+  background: linear-gradient(180deg, #e3afaf 0%, rgba(234, 246, 235, 0.4) 100%);
 }
 
 label {
